@@ -1,0 +1,52 @@
+.main-banner .profile {
+  margin-left: 120px;
+  position: relative;
+  z-index: 2;
+}
+
+.main-banner .profile img {
+  position: relative;
+  z-index: 2;
+}
+
+.main-banner .profile::after {
+  position: absolute;
+  background-image: url(../images/banner-right-dec.png);
+  width: 378px;
+  height: 378px;
+  content: '';
+  right: -25%;
+  z-index: 1;
+}
+
+section.our-team ul.nacc li .profile {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+section.our-team ul.nacc li .profile img {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+@media (max-width: 1200px) {
+.main-banner .profile {
+    margin-left: 60px;
+  }
+@media (max-width: 992px)
+.main-banner .profile {
+    margin-left: 0px;
+  }
+
+767
+section.our-team ul.nacc li .profile {
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+    transform: translateY(-0%);
+  }
+
+section.our-team ul.nacc li .profile img {
+    border-radius: 15px;
+  }

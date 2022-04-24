@@ -702,6 +702,29 @@ section.main-banner {
   z-index: 1;
 }
 
+/* Added for profile */
+.main-banner .profile {
+  margin-left: 120px;
+  position: relative;
+  z-index: 2;
+}
+
+.main-banner .profile img {
+  position: relative;
+  z-index: 2;
+}
+
+.main-banner .profile::after {
+  position: absolute;
+  background-image: url(../images/banner-right-dec.png);
+  width: 378px;
+  height: 378px;
+  content: '';
+  right: -25%;
+  z-index: 1;
+}
+
+/* Profile */
 .main-banner .header-text::after {
   position: absolute;
   background-image: url(../images/banner-left-dec.png);
@@ -889,6 +912,7 @@ section.our-courses ul.nacc li .left-image {
 section.our-courses ul.nacc li .left-image img {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  margin-left: 15px;
 }
 
 section.our-courses ul.nacc li .left-image .price h6 {
@@ -970,6 +994,29 @@ section.our-courses ul.nacc li p {
 .list img{
   border-radius: 15px;
 }
+.risk-image img{
+  max-width: 350px;
+  border-radius: 15px;
+  margin-right: 25px;
+}
+.risk-image {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.facility-image{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.facility-image img{
+  max-width: 350px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
 
 /*
 ---------------------------------------------
@@ -1470,6 +1517,19 @@ section.our-team ul.nacc li .right-image img {
   border-bottom-right-radius: 15px;
 }
 
+/* Profile */
+section.our-team ul.nacc li .profile {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+section.our-team ul.nacc li .profile img {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+/* Profile */
+
 section.our-team ul.nacc li .left-content {
   text-align: left;
   margin-right: 380px;
@@ -1767,6 +1827,9 @@ body {
 }
 
 @media (max-width: 1200px) {
+    .main-banner .profile {
+        margin-left: 60px;
+      }
   .main-banner .right-image {
     margin-left: 60px;
   }
@@ -1822,6 +1885,10 @@ body {
 }
 
 @media (max-width: 992px) {
+
+  .main-banner .profile {
+    margin-left: 0px;
+  }
 
   .main-banner .header-text {
     text-align: center;
@@ -1897,6 +1964,17 @@ body {
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     display: none;
   }
+  /* Profile */
+  section.our-team ul.nacc li .profile {
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+    transform: translateY(-0%);
+  }
+section.our-team ul.nacc li .profile img {
+    border-radius: 15px;
+  }
+  /* Profile */
   section.our-courses ul.nacc li .left-image,
   section.our-team ul.nacc li .right-image {
     position: relative;
