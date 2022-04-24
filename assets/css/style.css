@@ -256,7 +256,7 @@ header
   background-position: center;
   position: absolute;
   height: 110px;
-  top: 0;
+  top: -12px;
   left: 0;
   right: 0;
   z-index: 100;
